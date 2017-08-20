@@ -1,0 +1,23 @@
+<md-toolbar color="primary">
+    <span>Header</span>
+    <span class="spacer"></span>
+    <div *ngIf="authService.isLogged()">
+        <a md-mini-fab color="accent" class="icon-item" routerLink="/home">
+            <md-icon color="warn">home</md-icon>
+        </a>
+        <a md-mini-fab color="accent" class="icon-item" routerLink="/settings">
+            <md-icon color="warn">settings</md-icon>
+        </a>
+        <a md-mini-fab color="accent" class="icon-item" routerLink="/logout">
+            <md-icon color="warn">power_settings_new</md-icon>
+        </a>
+    </div>
+    <div *ngIf="!authService.isLogged()">
+        <a md-mini-fab color="accent" class="icon-item" (click)="openRegisterDialog()">
+            <md-icon color="warn">person_add</md-icon>
+        </a>
+        <a md-mini-fab color="accent" class="icon-item" (click)="openLoginDialog()">
+            <md-icon color="warn">person</md-icon>
+        </a>
+    </div>
+</md-toolbar>

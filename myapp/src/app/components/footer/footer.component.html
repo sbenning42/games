@@ -1,0 +1,9 @@
+<md-toolbar color="primary">
+    <span>Footer</span>
+    <span class="spacer"></span>
+    <div *ngIf="authService.isLogged()">
+        <a md-mini-fab color="accent" class="icon-item" (click)="openMatchmackingDialog()">
+            <md-icon color="warn">add</md-icon>
+        </a>
+    </div>
+</md-toolbar>

@@ -1,0 +1,19 @@
+.full-width {
+    width: 100%;
+}
+
+form {
+    text-align: center;
+}
+
+.mytool {
+    margin-bottom: 20px;
+}
+
+.contain {
+    display: flex;
+}
+
+.spaner {
+    flex: 1;
+}

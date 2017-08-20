@@ -1,0 +1,9 @@
+<md-chip-list>
+    <md-chip color="primary" selected="true" class="head">{{ match?.game.name }}</md-chip>
+    <md-chip color="{{ hostColor() }}" selected="true" class="head">{{ match?.user.name }}</md-chip>
+    <md-chip color="{{ guestColor() }}" selected="true" class="head">{{ match?.guest.name }}</md-chip>
+</md-chip-list>
+
+<app-morpion-game *ngIf="match?.game.name == 'morpion'" [match]="match" [playerId]="me?.id"></app-morpion-game>
+
+<a md-raised-button color="warn" (click)="deleteAndGoBack()">Quit Game</a>

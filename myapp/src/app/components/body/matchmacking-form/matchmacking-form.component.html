@@ -1,0 +1,20 @@
+<md-toolbar color="primary" class="mytool">
+    <h2 md-dialog-title>Add a Match</h2>
+</md-toolbar>
+
+<form novalidate [formGroup]="gameForm">
+    <md-dialog-content>
+
+        <md-select placeholder="Game you want to play" formControlName="gameId" [(ngModel)]="gameId" class="need">
+            <md-option *ngFor="let game of games | async" [value]="game.id">
+                {{ game.name }}
+            </md-option>
+        </md-select>
+
+    </md-dialog-content>
+    <md-dialog-actions>
+        <button md-mini-fab md-dialog-close color="accent"><md-icon color="warn">arrow_back</md-icon></button>
+        <span class="spaner"></span>
+        <button type="submit" (click)="add()" md-mini-fab md-dialog-close color="accent"><md-icon color="warn">check</md-icon></button>
+    </md-dialog-actions>
+</form>

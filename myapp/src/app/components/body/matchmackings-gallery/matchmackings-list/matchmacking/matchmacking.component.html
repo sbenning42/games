@@ -1,0 +1,20 @@
+<md-card class="example-card">
+    <md-card-header>
+        <div md-card-avatar class="example-header-image"></div>
+        <md-card-title>{{ matchmacking.game.name }}</md-card-title>
+        <md-card-subtitle>{{ matchmacking.user.name }}</md-card-subtitle>
+    </md-card-header>
+    <img class="parent" md-card-image src="{{ matchmacking.game.avatar }}">
+    <!--md-card-content>
+        <p>
+            {{ matchmacking.token }}
+        </p>
+    </md-card-content-->
+    <md-card-actions>
+        <div class="contain">
+            <button *ngIf="!mine()" md-raised-button color="accent" (click)="join()">JOIN</button>
+            <span class="spacer"></span>
+            <button *ngIf="mine()" md-raised-button color="warn" (click)="delete()">DELETE</button>
+        </div>
+    </md-card-actions>
+</md-card>

@@ -1,0 +1,24 @@
+.full-width {
+    width: 100%;
+}
+
+form {
+    text-align: center;
+}
+
+.mytool {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contain {
+    display: flex;
+}
+
+.need {
+    margin: 10px;
+}
+
+.spaner {
+    flex: 1;
+}

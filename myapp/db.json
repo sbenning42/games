@@ -1,0 +1,35 @@
+{
+    "users": [{
+            "id": 1,
+            "name": "example1",
+            "email": "example1@example.com"
+        },
+        {
+            "id": 2,
+            "name": "example2",
+            "email": "example2@example.com"
+        }
+    ],
+    "states": [{
+            "id": 1,
+            "name": "inactive"
+        },
+        {
+            "id": 2,
+            "name": "active"
+        }
+    ],
+    "profiles": [{
+            "id": 1,
+            "user_id": 2,
+            "state_id": 1,
+            "avatar": "https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/matthew.png"
+        },
+        {
+            "id": 2,
+            "user_id": 1,
+            "state_id": 2,
+            "avatar": "https://s-media-cache-ak0.pinimg.com/originals/2f/1c/ee/2f1cee39bfc1d4588ce3c55ae1e90030.png"
+        }
+    ]
+}

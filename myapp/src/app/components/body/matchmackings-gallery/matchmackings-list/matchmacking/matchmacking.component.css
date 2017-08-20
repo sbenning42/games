@@ -1,0 +1,27 @@
+.example-card {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.example-header-image {
+    background-image: url('');
+    background-size: cover;
+}
+
+p {
+    word-break: break-word;
+}
+
+.contain {
+    display: flex;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.parent {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+}
